@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+.space {
+    display: block;
+    width: 100%;
+}
+
+.space-20 {
+    height: 20px;
+}
+
+section figure img {
+    height: auto;
+    max-width: 100%;
+}
+
+.fixed-block {
+    bottom: 34px;
+    position: absolute;
+}
+
+.fixed-block ul li {
+    margin-bottom: 1em;
+}
+
+.block-left {
+    left: 0;
+}
+
+.block-right {
+    right: 0;
+    margin-right: 2vw;
+}
+
+.single-language {
+    text-transform: uppercase;
+}

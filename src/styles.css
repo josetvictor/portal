@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    height: 100vh;
+    /* background: linear-gradient(to right, #800080, #0000FF); */
+    background: linear-gradient(270deg, #800080, #0000FF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 9s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.icon {
+    color: white;
+    font-size: 23px;
+    line-height: 100%;
+}
+
+.title-1 {
+    font-size: 5.267em;
+    color: #ffffffb5;
+}
+
+.title-4 {
+    font-size: 1.2em;
+    color: #ffffffb5;
+}
+
+.text {
+    color: #ffffffb5;
+}
+
+.button-link {
+    color: #ffffffb5;
+    text-decoration: none;
+}
