@@ -6,32 +6,25 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { MainComponent } from './pages/main/main.component';
+import { MenuComponent } from "./components/menu/menu.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
     AboutComponent,
     BlogComponent,
     PageNotFoundComponent,
     PortfolioComponent,
     ResumeComponent,
-    MainComponent
-  ],
+    MainComponent,
+    MenuComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  constructor(public router: Router) {}
-
   title = 'portal';
-  isMenuVisible = true;
-
-  toggleMenu(){
-    this.isMenuVisible = !this.isMenuVisible
-  }
 }
