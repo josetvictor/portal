@@ -1,22 +1,26 @@
 header {
     max-height: 15vh;
     font-size: x-large;
+    display: flex;
+    align-items: center;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2vw;
+.menu-button {
     margin: 1em;
 }
 
-.menu-options {
-    display: flex;
+.menu ul {
     gap: 2vw;
+    margin: 1em;
+    padding: 0;
 }
 
-.hidden {
+.disabled {
     display: none;
+}
+
+.enabled {
+    display: flex;
 }
 
 @media (max-width: 1024px) {
@@ -26,20 +30,21 @@ header {
 }
 
 @media (max-width: 768px) {
-    .menu { 
+    header {
+        background-color: gray;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .menu {
         background-color: black;
         width: 50%;
+        max-height: 100%;
         position: absolute;
-        height: 100%;
-        padding: 3vh 0 0 2vh;
-        margin: 0 0 0 0;
-        flex-direction: column;
-        gap: 4vh;
+        margin-top: 7.5vh;
     }
 
     .menu-options {
-        padding: 0;
         flex-direction: column;
-        gap: 4vh;
     }
 }

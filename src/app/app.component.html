@@ -1,5 +1,5 @@
 <header>
-  <nav class="menu">
+  <section class="menu-button">
     <a routerLink="/main" routerLinkActive="activebutton" ariaCurrentWhenActive="page" (click)="toggleMenu()">
       @if (router.routerState.snapshot.url !== '/main') {
       <i class="icon fa-solid fa-x"></i>
@@ -7,8 +7,9 @@
       <i class="icon fa-solid fa-bars"></i>
       }
     </a>
-    
-    <ul [className]="isMenuVisible ? 'hidden' : 'menu-options'">
+  </section>
+  <nav class="menu">
+    <ul class="menu-options" [className]="isMenuVisible ? 'enabled' : 'disabled'">
       <li>
         <a class="button-link" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
           Sobre

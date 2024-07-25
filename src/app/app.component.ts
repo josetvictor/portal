@@ -29,7 +29,7 @@ export class AppComponent {
   constructor(public router: Router) {}
 
   title = 'portal';
-  isMenuVisible = false;
+  isMenuVisible = true;
 
   toggleMenu(){
     this.isMenuVisible = !this.isMenuVisible
