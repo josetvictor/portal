@@ -1,37 +1,35 @@
 <header>
-  <nav>
-    <ul>
+  <nav class="menu">
+    <a routerLink="/main" routerLinkActive="activebutton" ariaCurrentWhenActive="page" (click)="toggleMenu()">
+      @if (router.routerState.snapshot.url !== '/main') {
+      <i class="icon fa-solid fa-x"></i>
+      } @else {
+      <i class="icon fa-solid fa-bars"></i>
+      }
+    </a>
+    
+    <ul [className]="isMenuVisible ? 'hidden' : 'menu-options'">
       <li>
         <a class="button-link" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-            Sobre
+          Sobre
         </a>
       </li>
 
       <li>
         <a class="button-link" routerLink="/resume" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-            Resumo
+          Resumo
         </a>
       </li>
 
       <li>
         <a class="button-link" routerLink="/portfolio" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-            Portifolio
+          Portifolio
         </a>
       </li>
 
       <li>
         <a class="button-link" routerLink="/blog" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-            blog
-        </a>
-      </li>
-
-      <li>
-        <a routerLink="/main" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-            @if (router.routerState.snapshot.url !== '/main') {
-            <i class="icon fa-solid fa-x"></i>
-          } @else {
-            <i class="icon fa-solid fa-bars"></i>
-          }
+          blog
         </a>
       </li>
     </ul>

@@ -1,16 +1,45 @@
 header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    max-height: 15vh;
+    font-size: x-large;
 }
 
-header nav {
-    width: 50%;
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+    margin: 1em;
 }
 
-header nav ul {
+.menu-options {
     display: flex;
-    justify-content: space-around;
+    gap: 2vw;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    header {
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu { 
+        background-color: black;
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        padding: 3vh 0 0 2vh;
+        margin: 0 0 0 0;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .menu-options {
+        padding: 0;
+        flex-direction: column;
+        gap: 4vh;
+    }
 }

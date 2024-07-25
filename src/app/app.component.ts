@@ -27,5 +27,11 @@ import { MainComponent } from './pages/main/main.component';
 export class AppComponent {
 
   constructor(public router: Router) {}
+
   title = 'portal';
+  isMenuVisible = false;
+
+  toggleMenu(){
+    this.isMenuVisible = !this.isMenuVisible
+  }
 }
