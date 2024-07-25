@@ -23,6 +23,16 @@
     cursor: pointer;
 }
 
+/* Defina as cores intermediárias manualmente ou use uma ferramenta de gradient picker */
+.activebutton {
+    color: #e1dd17;
+}
+
+.activebutton:hover {
+    color: #8f8c0c;
+}
+
+
 @media (max-width: 1024px) {
     .navbar {
         font-size: 1.2rem;
@@ -30,9 +40,10 @@
 }
 
 @media (max-width: 768px) {
-    .menu-icon{
+    .menu-icon {
         display: flex;
     }
+
     .navbar-menu {
         background-color: #333;
         position: fixed;
@@ -52,12 +63,13 @@
     .navbar.active {
         background-color: #333;
     }
+
     .navbar-menu.active {
         transform: translateX(0);
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
     .navbar-menu {
         width: 100%;
     }
