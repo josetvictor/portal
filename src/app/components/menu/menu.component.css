@@ -2,6 +2,7 @@
     width: 100%;
     padding: 1vh 2vw;
     font-size: 1.5rem;
+    justify-content: center;
 }
 
 .navbar-container {
@@ -40,6 +41,9 @@
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+    }
     .menu-icon {
         display: flex;
     }

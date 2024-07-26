@@ -137,3 +137,15 @@ table {
 .button-link:hover {
     color: #8f8c0c;
 }
+
+@media (max-width: 1024px) {
+    .title-1 {
+        font-size: 4.267em;
+    }
+}
+
+@media (max-width: 425px) {
+    .title-1 {
+        font-size: 3.267em;
+    }
+}
