@@ -1,21 +1,17 @@
 .navbar {
     width: 100%;
-    padding: 1vh 2vw;
     font-size: 1.5rem;
-    justify-content: center;
-}
-
-.navbar-container {
+    background-color: transparent;
+    padding: 23px 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 .navbar-menu {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 2vh;
+    gap: 5vw;
 }
 
 .menu-icon {
@@ -24,9 +20,9 @@
     cursor: pointer;
 }
 
-/* Defina as cores intermediárias manualmente ou use uma ferramenta de gradient picker */
 .activebutton {
     color: #e1dd17;
+    text-decoration: underline;
 }
 
 .activebutton:hover {
@@ -52,7 +48,7 @@
         background-color: #333;
         position: fixed;
         left: 0;
-        top: 4vh;
+        top: 10vh;
         height: 100%;
         flex-direction: column;
         align-items: baseline;

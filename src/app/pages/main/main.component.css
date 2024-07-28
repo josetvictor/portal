@@ -3,8 +3,8 @@
 }
 
 .container-img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     overflow: hidden;
     padding: 0;
 }
@@ -14,7 +14,9 @@
 }
 
 .container-text {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .list-icons-links {
@@ -28,6 +30,14 @@
     .container-img {
         width: 100%;
         height: 100%;
+    }
+
+    .container-img img {
+        border-radius: 50%;
+        display: block;
+        height: 250px;
+        margin: 0 auto 40px auto;
+        width: 250px;
     }
 
     .col-md-6 {

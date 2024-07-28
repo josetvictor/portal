@@ -1,43 +1,41 @@
 <nav class="navbar" [class.active]="isMenuOpen">
-    <div class="navbar-container">
-        <div class="menu-icon" (click)="toggleMenu()">
-            <i class="icon fa-solid fa-bars"></i>
-        </div>
-        
-        <ul class="navbar-menu" [class.active]="isMenuOpen">
-            <li>
-                <a class="button-link" routerLink="/main" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-                (click)="toggleMenu()">
-                    Inicio
-                </a>
-            </li>
-    
-            <li>
-                <a class="button-link" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page" 
-                (click)="toggleMenu()">
-                    Sobre
-                </a>
-            </li>
-    
-            <li>
-                <a class="button-link" routerLink="/resume" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-                (click)="toggleMenu()">
-                    Resumo
-                </a>
-            </li>
-    
-            <li>
-                <a class="button-link" routerLink="/portfolio" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-                (click)="toggleMenu()">
-                    Portifolio
-                </a>
-            </li>
-            <li>
-                <a class="button-link" routerLink="/blog" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-                (click)="toggleMenu()">
-                    blog
-                </a>
-            </li>
-        </ul>
+    <div class="menu-icon" (click)="toggleMenu()">
+        <i class="icon fa-solid fa-bars"></i>
     </div>
+
+    <ul class="navbar-menu" [class.active]="isMenuOpen">
+        <li>
+            <a class="button-link" routerLink="/main" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
+                (click)="toggleMenu()">
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a class="button-link" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
+                (click)="toggleMenu()">
+                Sobre
+            </a>
+        </li>
+
+        <li>
+            <a class="button-link" routerLink="/resume" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
+                (click)="toggleMenu()">
+                Resumo
+            </a>
+        </li>
+
+        <li>
+            <a class="button-link" routerLink="/portfolio" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
+                (click)="toggleMenu()">
+                Portifolio
+            </a>
+        </li>
+        <li>
+            <a class="button-link" routerLink="/blog" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
+                (click)="toggleMenu()">
+                blog
+            </a>
+        </li>
+    </ul>
 </nav>
